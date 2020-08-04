@@ -7,5 +7,4 @@ tmp.py
 data/FashionMNIST
 data/imdb
 data/MNIST
-translation/
-chat/
+data/multi30k

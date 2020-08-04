@@ -1,0 +1,9 @@
+.idea/
+.vector_cache
+checkpoints/
+test.py
+tmp.py
+*.pth
+data/FashionMNIST
+data/imdb
+data/MNIST

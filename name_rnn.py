@@ -110,7 +110,7 @@ def make_tensors(names, countries):
     seq_lengths, perm_idx = seq_lengths.sort(dim=0, descending=True)
     seq_tensor = seq_tensor[perm_idx]
     countries = countries[perm_idx]
-
+    # seq_tensor.shape:[batchSize, seqLen]
     return create_tensor(seq_tensor), create_tensor(seq_lengths), create_tensor(countries)
 
 

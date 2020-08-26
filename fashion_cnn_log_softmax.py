@@ -107,4 +107,4 @@ for epoch in range(num_opochs):
     train(model, device, train_loader, optimizer, epoch)
     test(model, device, test_loader)
 
-torch.save(model.state_dict(), "fashion_cnn_log_softmax.pth")
+torch.save(model.state_dict(), "model\\fashion_cnn_log_softmax.pth")

@@ -8,3 +8,9 @@ data/FashionMNIST
 data/imdb
 data/MNIST
 data/multi30k
+data/fake_real_news.csv.zip
+data/toutiao_category_dev.txt
+data/toutiao_category_test.txt
+data/toutiao_category_train.txt
+model/*
+__pycache__

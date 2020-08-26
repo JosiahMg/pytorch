@@ -181,14 +181,14 @@ for epoch in range(NUM_EPOCHS):
 
     if valid_acc > best_valid_acc:
         best_valid_acc = valid_acc
-        torch.save(model.state_dict(), "cnn-model.pth")
+        torch.save(model.state_dict(), "model\cnn-model.pth")
 
     print("Epoch", epoch, "Train loss", train_loss, "Train acc", train_acc)
     print("Epoch", epoch, "Valid loss", valid_loss, "Valid acc", valid_acc)
 
 
 
-model.load_state_dict(torch.load("cnn-model.pth"))
+model.load_state_dict(torch.load("model\cnn-model.pth"))
 
 
 test_loss, test_acc = evaluate(model, test_iterator, criterion)

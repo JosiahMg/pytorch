@@ -146,7 +146,7 @@ for epoch in range(NUM_EPOCHS):
             val_loss = evaluate(model, val_iter)
             print("epoch", epoch, "iteration", i, "validation loss", val_loss)
             if len(val_losses) == 0 or val_loss < min(val_losses):
-                torch.save(model.state_dict(), "lm.pth")
+                torch.save(model.state_dict(), "model\lm.pth")
                 print('best model saved to lm.pth')
             else:
                 # learning_rate decay
@@ -162,7 +162,7 @@ best_model = RNNModel(vocab_size=len(TEXT.vocab), embed_size=EMBEDDING_SIZE, hid
 if USE_CUDA:
     best_model = best_model.to(device)
 
-best_model.load_state_dict(torch.load("lm.pth"))
+best_model.load_state_dict(torch.load("model\lm.pth"))
 
 
 # preplexity

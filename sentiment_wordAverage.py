@@ -143,13 +143,13 @@ for epoch in range(NUM_EPOCHS):
 
     if valid_acc > best_valid_acc:
         best_valid_acc = valid_acc
-        torch.save(model.state_dict(), "wordavg-model.pth")
+        torch.save(model.state_dict(), "model\wordavg-model.pth")
 
     print("Epoch", epoch, "Train loss", train_loss, "Train acc", train_acc)
     print("Epoch", epoch, "Valid loss", valid_loss, "Valid acc", valid_acc)
 
 
-model.load_state_dict(torch.load("wordavg-model.pth"))
+model.load_state_dict(torch.load("model\wordavg-model.pth"))
 
 import spacy
 nlp = spacy.load("en")

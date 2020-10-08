@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import math
 
 HIDDEN_SIZE = 100
-BATCH_SIZE = 256
+BATCH_SIZE = 64
 N_LAYER = 2
 N_EPOCHS = 20
 N_CHARS = 128
